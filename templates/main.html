@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style2.css' %}">
+</head>
+
+<body>
+    <div>
+        <form action="recording">
+            <button class="mic-btn">
+                <svg class="mic-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path fill="#fff" d="M256 64c-70.7 0-128 57.3-128 128v128c0 70.7 57.3 128 128 128s128-57.3 128-128V192c0-70.7-57.3-128-128-128zm74.7 246.9c-16 0-29-13-29-29v-59.7c0-16 13-29 29-29s29 13 29 29v59.7c0 16-13 29-29 29zM256 320c-8.8 0-16-7.2-16-16v-59.7c0-8.8 7.2-16 16-16s16 7.2 16 16v59.7c0 8.8-7.2 16-16 16zM181.3 310.9c-16 0-29-13-29-29V222c0-16 13-29 29-29s29 13 29 29v59.9c0 16-13 29-29 29z"/>
+                </svg>
+                <span class="mic-text">Record</span>
+            </button>
+        </form>
+    </div>
+    <span class="wave"></span>
+    <h3>{{content}}</h3>
+          
+</body>
+</html>

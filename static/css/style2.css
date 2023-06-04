@@ -1,0 +1,73 @@
+body {
+    background-image: url("../images/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    } 
+    /* Mic button styles */
+.mic-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 48%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    background-color: #0077FF;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .mic-btn:hover {
+    background-color: #0066CC;
+  }
+  
+  .mic-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .mic-text {
+    display: none;
+  }
+  
+  /* Music wave animation styles */
+  .wave {
+    position: absolute;
+    bottom: 300px;
+    left: 40%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid #0077FF;
+    box-shadow: 0 0 0 0 #fff;
+    animation: pulse 1s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(0.5);
+      box-shadow: 0 0 0 0 rgba(0, 119, 255, 0.4);
+    }
+    50% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px white;
+    }
+    100% {
+      transform: scale(0.5);
+      box-shadow: 0 0 0 0 rgba(0, 119, 255, 0.4);
+    }
+    25%{
+        transform: scale(0.8);
+        box-shadow: 0 0 0 0 white;
+      }
+    75% {
+        transform: scale(0.8);
+        box-shadow: 0 0 0 0 rgba(0, 119, 255, 0);
+      }
+  }
+  

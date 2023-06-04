@@ -1,0 +1,84 @@
+body {
+    background-color: black;
+    color: gold;
+  }
+  
+  .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+  }
+  
+  .logo img {
+    max-width: 40%;
+    margin-bottom: 3rem;
+  }
+  
+  .welcome {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  
+  .welcome.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  form{
+    position:bottom;
+  }
+  
+  button {
+    background-color: gold;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:hover {
+    background-color: black;
+    color: gold;
+    cursor: pointer;
+  }
+
+  
+  /* .snow {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .snow__layer {
+    position: absolute;
+    
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    bottom: 100%;
+    
+    animation: fall  linear infinite;
+    animation-delay: calc(-1s * var(--delay));
+  }
+  
+  
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(0) rotate(0);
+    }
+    100% {
+      transform: translateY(100vh) rotate(1 turn);
+    }
+  }
+  
+  
+   */

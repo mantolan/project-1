@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <center><h1 class="welcome">Welcome to our website</h1></center>
+	<div class="logo">
+	  <img src="{% static 'images/bot.jpg' %}" alt="Company Logo">
+	</div>
+    <center>
+    
+		
+	<!-- <div class="snow">
+        
+		<div class="snow__layer"></div>
+		<div class="snow__layer"></div>
+		<div class="snow__layer"></div>
+		<div class="snow__layer"></div>
+		<div class="snow__layer"></div>
+        <div class="form"> -->
+		<div>
+
+		
+		<form action="main">
+            <button>Let's Chat With Bot</button>
+        </form>
+	</div>
+
+      
+    </center>
+	<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
